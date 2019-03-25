@@ -1,4 +1,8 @@
-package evgenyt.iterator_demo.PersonBase;
+package evgenyt.iterator_demo.person_base;
+
+/**
+ * Client with name and email
+ */
 
 public class Person {
     private String name;
@@ -9,11 +13,12 @@ public class Person {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public String getEmail() {
         return email;
+    }
+
+    @Override
+    public String toString() {
+        return "name=" + name + " email=" + email;
     }
 }

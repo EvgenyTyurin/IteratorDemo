@@ -1,4 +1,12 @@
 package evgenyt.iterator_demo.person_base;
 
-public class PersonBase {
+import evgenyt.iterator_demo.person_iterator.PersonIterator;
+
+/**
+ * Abstract aggregate
+ */
+
+public interface PersonBase {
+    PersonIterator getIterator();
+    PersonIterator getEmailsIterator();
 }
